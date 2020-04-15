@@ -8,7 +8,7 @@ namespace EntidadNegocio
 {
     class Curso
     {
-        private string descripcion;
+        private string brach_pp_descripcion;
         private List<Alumno> alumnos = new List<Alumno>();
 
         public void agregarAlumno(Alumno a)
@@ -18,11 +18,11 @@ namespace EntidadNegocio
 
         public void setDescripcion(string descripcion)
         {
-            this.descripcion = descripcion;
+            this.brach_pp_descripcion = descripcion;
         }
         public string getDescripcion()
         {
-            return this.descripcion;
+            return this.brach_pp_descripcion;
         }
 
     }
