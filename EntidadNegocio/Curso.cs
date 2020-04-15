@@ -9,7 +9,14 @@ namespace EntidadNegocio
     class Curso
     {
         public string descripcion { get; set; }
-        public Alumno alumno;
+        public List<Alumno> alumnos = new List<Alumno>();
+
+        public void agregarAlumno(Alumno a)
+        {
+            this.alumnos.Add(a);
+        }
+
+
 
     }
 }
