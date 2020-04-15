@@ -9,7 +9,7 @@ namespace EntidadNegocio
     class Curso
     {
         public string descripcion { get; set; }
-        public List<Alumno> alumnos = new List<Alumno>();
+        private List<Alumno> alumnos = new List<Alumno>();
 
         public void agregarAlumno(Alumno a)
         {
