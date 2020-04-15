@@ -8,8 +8,16 @@ namespace EntidadNegocio
 {
     class Alumno
     {
-        public string nombre { get; set; }
-        public string apellido { get; set; }
-        public int edad { get; set; }
+        private string nombre;
+        private string apellido;
+        private int edad;
+
+        public Alumno(string nombre, string apellido, int edad)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.edad = edad;
+
+        }
     }
 }

@@ -8,7 +8,7 @@ namespace EntidadNegocio
 {
     class Curso
     {
-        public string master_descripcion_conflicto { get; set; }
+        private string descripcion;
         private List<Alumno> alumnos = new List<Alumno>();
 
         public void agregarAlumno(Alumno a)
@@ -16,7 +16,14 @@ namespace EntidadNegocio
             this.alumnos.Add(a);
         }
 
-
+        public void setDescripcion(string descripcion)
+        {
+            this.descripcion = descripcion;
+        }
+        public string getDescripcion()
+        {
+            return this.descripcion;
+        }
 
     }
 }
